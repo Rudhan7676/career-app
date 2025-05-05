@@ -1,0 +1,255 @@
+.planning-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.planning-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.planning-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.planning-header .subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Career Paths Section */
+.career-paths {
+  margin-bottom: 4rem;
+}
+
+.career-paths h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.paths-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.path-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.path-card:hover {
+  transform: translateY(-5px);
+}
+
+.path-card.selected {
+  border: 2px solid #3498db;
+}
+
+.path-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.path-header h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.progression-timeline {
+  margin-top: 1.5rem;
+}
+
+.level-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.level-card h4 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.timeframe {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.roles-list, .skills-list, .certifications {
+  margin-top: 1rem;
+}
+
+.roles-list h5, .skills-list h5, .certifications h5 {
+  color: #34495e;
+  margin-bottom: 0.5rem;
+}
+
+.roles-list ul, .skills-list ul, .certifications ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.roles-list li, .skills-list li, .certifications li {
+  background: #fff;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Action Plan Section */
+.action-plan {
+  margin-bottom: 4rem;
+}
+
+.action-plan h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.action-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.action-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.action-card p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.steps-list {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.steps-list h4 {
+  color: #34495e;
+  margin-bottom: 1rem;
+}
+
+.steps-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.steps-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  color: #666;
+}
+
+.steps-list li:last-child {
+  border-bottom: none;
+}
+
+/* Planning Tools Section */
+.planning-tools {
+  margin-bottom: 2rem;
+}
+
+.planning-tools h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.tool-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tool-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.tool-card p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  min-height: 3em;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: #3498db;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #2980b9;
+}
+
+.btn-secondary {
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+.btn-secondary:hover {
+  background: #bdc3c7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .planning-container {
+    padding: 1rem;
+  }
+
+  .planning-header h1 {
+    font-size: 2rem;
+  }
+
+  .paths-grid, .action-grid, .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .path-card, .action-card, .tool-card {
+    padding: 1rem;
+  }
+} 

@@ -1,0 +1,234 @@
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.skills-header h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.skills-header .subtitle {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.learning-paths {
+  margin-bottom: 4rem;
+}
+
+.learning-paths h2 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.paths-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.path-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.path-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.path-card p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.path-duration {
+  margin-bottom: 1rem;
+}
+
+.path-duration .label {
+  color: #666;
+  margin-right: 0.5rem;
+}
+
+.path-duration .value {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.path-skills h4 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-tag {
+  background: var(--primary-light);
+  color: var(--primary-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.skill-categories {
+  margin-bottom: 4rem;
+}
+
+.skill-categories h2 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.category-section {
+  margin-bottom: 3rem;
+}
+
+.category-section h3 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.skill-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h4 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.course-item {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.course-item h5 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.course-details {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.course-details span {
+  color: #666;
+}
+
+.course-details .provider {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.skill-tracking {
+  margin-bottom: 2rem;
+}
+
+.skill-tracking h2 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.tracking-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-secondary:hover {
+  background: var(--primary-light);
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 1rem;
+  }
+
+  .paths-grid,
+  .skills-grid,
+  .tracking-features {
+    grid-template-columns: 1fr;
+  }
+
+  .course-details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+} 

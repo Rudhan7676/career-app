@@ -1,0 +1,243 @@
+.insights-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.insights-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.insights-header h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.insights-header .subtitle {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.industry-trends {
+  margin-bottom: 4rem;
+}
+
+.industry-trends h2 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.trends-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.trend-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.trend-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.trend-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat .label {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat .value {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.top-roles {
+  margin-bottom: 1.5rem;
+}
+
+.top-roles h4 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.top-roles ul {
+  list-style: none;
+  padding: 0;
+}
+
+.top-roles li {
+  color: #666;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.top-roles li:before {
+  content: "•";
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+}
+
+.trend-description {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.career-statistics {
+  margin-bottom: 4rem;
+}
+
+.career-statistics h2 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.stat-card .stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.stat-card p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.career-resources {
+  margin-bottom: 4rem;
+}
+
+.career-resources h2 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.resource-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.salary-calculator-card {
+  grid-column: auto;
+  max-width: 100%;
+}
+
+.salary-calculator-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.salary-calculator-card .salary-calculator {
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+.resource-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.resource-card p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  min-height: 3em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--primary-color-dark);
+}
+
+@media (max-width: 768px) {
+  .insights-container {
+    padding: 1rem;
+  }
+
+  .insights-header h1 {
+    font-size: 2rem;
+  }
+
+  .trends-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trend-card,
+  .stat-card,
+  .resource-card {
+    padding: 1rem;
+  }
+
+  .salary-calculator-card .salary-calculator {
+    padding: 0;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+} 
